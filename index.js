@@ -1,9 +1,28 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // Initialize empty string called wordInverted
+  let wordInverted = '';
+
+  // Start a for loop that initializes a counter variable at 1
+  // The loop should stop when the variable is greater than the length of the word
+  for(let counter = 1; counter<=word.length; counter++){
+    wordInverted+=word[word.length-counter];
+  }
+
+  // After the for loop, check if the test word is equal to wordInverted
+  // Return the boolean
+  return (word==wordInverted);
+
 }
 
+
+
 /* 
-  Add your pseudocode here
+Initialize empty string called wordInverted
+Start a for loop that initializes a counter variable at 1, the loop should stop when the variable is greater than the length of the word
+In the for loop assign the element at (test word [length - counter] ) into wordInverted
+After the for loop, check if the test word is equal to wordInverted
+Return the boolean
 */
 
 /*
